@@ -1,0 +1,45 @@
+.row{
+    margin-left: 15px;
+    color: white;
+}
+
+.row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row_posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row_poster{
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    transition: tranform 450ms;
+    margin-right: 10px;
+}
+
+.row_posterLarge{
+    max-height: 250px;
+}
+
+.row_posterLarge:hover{
+    transform: scale(1.09);
+    opacity: 1;
+}
+
+.row_poster:hover{
+    transform: scale(1.08);
+    opacity: 1;
+}
+
+.movie_name{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
